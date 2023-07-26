@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: lightblue;
+}
+h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 24px 0 12px;
+    color: #515A5A;
+}
+.cv-container{
+    max-width: 1000px;
+    width: 100%;
+    margin: 100px auto;
+    height:  auto;
+    box-shadow: 0 32px 55px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 400px 2fr;
+}
+.col-left{
+    background-color: #e5f0f4;
+    padding: 40px;
+}
+.col-right{
+    background-color: #FFF;
+    padding: 40px;
+}
+.profil{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom:  2.2rem;
+    text-align: center;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #515A5A;
+}
+.profil .profil-name h1{
+    font-size: 18px;
+    margin: 15px 0;
+    color: #515A5A;
+}
+.profil .profil-name h4{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 15px;
+}
+.profil-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profil-img img{
+    width: 100%;
+}
+.contact-info ul {
+    list-style: none;
+}
+.info-perso ul li{
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.info-perso ul li i{
+    color: #164546;
+    font-size: 17px;
+}
+.info-perso ul li span{
+    font-size: 14px;
+    display: inline-block;
+    color: #515A5A;
+}
+.education-info{
+    margin-bottom: 18px;
+}
+.education-info .year{
+    color: #67b7ba;
+    font-size: 15px;
+    font-weight: 600;
+}
+.education-info .degree-name{
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: 500;
+    color: #515A5A;
+    line-height: 22px;
+}
+.education-info .university-name{
+    font-size: 13px;
+    display: inline-block;
+    color: #919695;
+    margin-top: 4px;
+}
+.languages .language{
+    margin-bottom: 10px;
+}
+.languages .language h4{
+    font-size: 14px;
+    color: #515A5A;
+    font-weight: bold;
+}
+.languages .language .percent,
+.competences .competence .percent{
+    width: 100%;
+    height: 8px;
+    background-color: #67b7ba;
+    margin-top: 8px;
+    border-radius: 10px;
+    border-radius: 10px;
+}
+.languages .language .percent span{
+    background-color: #164546;
+    border-radius: 10px;
+}
+.competences .competence .percent span{
+    background-color: #164546;
+    border-radius: 10px;
+}
+.languages .language .percent span,
+.competences .competence .percent span{
+    display: block;
+    height: 100%;
+}
+/* .competences:first-child {
+    margin-top: 300px;
+} */
+.competences .competence{
+    display: flex;
+    justify-content: space-between;
+}
+.competences .competence h4{
+    min-width: 170px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.competences .competence{
+    margin-bottom: 12px;
+}
+.interets{
+    margin-top: 40px;
+}
+.interets .squares{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 34px 0 20px;
+}
+.interets .squares div{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.interets .squares div .square{
+   width: 20px;
+   height: 20px;
+   background-color: #164546;
+}
+
+
+@media screen and (max-width:1000px){
+    .cv-container{
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+}
