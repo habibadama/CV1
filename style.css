@@ -10,7 +10,7 @@ body{
 h2{
     font-size: 20px;
     text-transform: uppercase;
-    margin: 24px 0 12px;
+    margin: 24px 0 14px;
     color: #515A5A;
 }
 .cv-container{
@@ -33,7 +33,6 @@ h2{
 .profil{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     margin-bottom:  2.2rem;
     text-align: center;
@@ -128,12 +127,9 @@ h2{
     display: block;
     height: 100%;
 }
-/* .competences:first-child {
-    margin-top: 300px;
-} */
 .competences .competence{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+   grid-template-columns: 140px 2fr;
 }
 .competences .competence h4{
     min-width: 170px;
@@ -159,15 +155,22 @@ h2{
     align-items: center;
 }
 .interets .squares div .square{
-   width: 20px;
-   height: 20px;
+   width: 15px;
+   height: 15px;
    background-color: #164546;
 }
 
 
-@media screen and (max-width:1000px){
+@media screen and (max-width: 768px){
     .cv-container{
         grid-template-columns: 1fr;
         margin: 0 auto;
+    }
+    .competences .competence{
+       grid-template-columns:  1fr;
+    }
+    .col-left,
+    .col-right{
+        padding: 20px;
     }
 }
